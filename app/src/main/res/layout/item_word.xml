@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="@string/word_name" />
+
+        <TextView
+            android:id="@+id/text_meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:text="@string/meaning"
+            android:visibility="gone"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/text_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cambridge_dictionary_link_text"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        android:contentDescription="Edit"
+        android:layout_marginStart="16dp"
+        android:tint="@android:color/holo_blue_dark" />
+
+    <ImageView
+        android:id="@+id/icon_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Delete"
+        android:layout_marginStart="8dp"
+        android:tint="@android:color/holo_red_dark" />
+</LinearLayout>
